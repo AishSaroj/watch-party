@@ -11,6 +11,18 @@ A real-time YouTube Watch Party application where users can create or join rooms
 - Remove users
 - Transfer host privileges
 
+- ## Architecture Overview
+
+The application follows a client-server architecture.
+
+- The React frontend connects to the Node.js backend using Socket.IO.
+- When a user creates or joins a room, a WebSocket connection is established.
+- The backend manages room information, users, roles, and the current video state.
+- When the Host or Moderator performs an action such as play, pause, seek, or changing the video, the frontend emits a Socket.IO event.
+- The backend validates the user's role, updates the room state, and broadcasts the event to all users in the room.
+- Every connected client receives the event and updates its YouTube player, ensuring synchronized playback across all participants.
+- MongoDB stores persistent application data, while Socket.IO handles real-time communication.
+
 ## Tech Stack
 
 ### Frontend
