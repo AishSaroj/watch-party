@@ -86,5 +86,7 @@ http://localhost:8000
 
 Frontend:
 https://watchpartyfrontend.vercel.app
+
+
 Backend:
 https://watch-party-backend-kdua.onrender.com
