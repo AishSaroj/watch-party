@@ -26,6 +26,7 @@ function Room() {
     const [room, setRoom] = useState(null);
 
     const [currentUser, setCurrentUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     const [videoUrl, setVideoUrl] = useState("");
 
@@ -58,6 +59,7 @@ function Room() {
 
 
         setRoom(roomData);
+        setLoading(false);
 
 
 
@@ -577,7 +579,13 @@ function Room() {
     }
 
 
-
+if (loading) {
+    return (
+        <div className="min-h-screen bg-gray-950 flex items-center justify-center text-white">
+            Loading...
+        </div>
+    );
+}
 
 
 
