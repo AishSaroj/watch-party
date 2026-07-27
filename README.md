@@ -8,7 +8,6 @@ A real-time YouTube Watch Party application where users can create or join rooms
 - Real-time video synchronization
 - Host, Moderator and Participant roles
 - Role management
-- Live chat
 - Remove users
 - Transfer host privileges
 
