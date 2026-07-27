@@ -85,7 +85,6 @@ http://localhost:8000
 ## Live Demo
 
 Frontend:
-https://your-vercel-url.vercel.app
-
+https://watchpartyfrontend.vercel.app
 Backend:
-https://your-render-url.onrender.com
+https://watch-party-backend-kdua.onrender.com
